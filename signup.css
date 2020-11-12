@@ -1,0 +1,22 @@
+meter {
+    width: 50%;
+    height: 20px;
+    background: none;
+    /* Required to get rid of the default background property */
+    
+   
+  }
+  meter::-moz-meter-bar {
+    box-shadow: 0 5px 5px -5px #999 inset;
+    background-image: linear-gradient( 90deg, #2286c9 5%, #FF00FF 5%, #FF00FF 15%, #04C319 15%, #04C319 55%, #F1F70D 55%, #F1F70D 95%, #00FFCC 95%, #00FFCC 100%);
+    background-size: 100% 100%;
+  }
+  /* meter[value="1"]::-webkit-meter-optimum-value { background:linear-gradient( red,rgba(233, 58, 4, 0.658)) }
+  meter[value="2"]::-webkit-meter-optimum-value { background:linear-gradient( yellow,rgb(141, 141, 7)) }
+  meter[value="3"]::-webkit-meter-optimum-value { background:linear-gradient( orange,rgb(121, 80, 5)) }
+  meter[value="4"]::-webkit-meter-optimum-value { background:linear-gradient( green,rgb(6, 77, 6) }
+   */
+   meter[value="1"]::-webkit-meter-optimum-value { background: red; }
+meter[value="2"]::-webkit-meter-optimum-value { background: yellow; }
+meter[value="3"]::-webkit-meter-optimum-value { background: orange; }
+meter[value="4"]::-webkit-meter-optimum-value { background: green; }

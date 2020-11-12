@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login|Kerala Tourism</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="signup.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+    <body style="background: linear-gradient(white,rgb(177, 205, 212));">
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html"><img src="https://banner2.cleanpng.com/20181127/qvj/kisspng-tourism-in-kerala-gods-own-country-logo-home-festival-information-system-5bfd896b9aef54.5165373415433424436346.jpg" width="120" height="70" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <div class="col-md-3"></div>
+          <div class="col-md-8">
+            <ul class="navbar-nav " >
+              <li class="nav-item active  ">
+                <a class="nav-link " href="home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+             
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Districts
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="tvm.html">Thiruvananthapuram</a>
+                  <a class="dropdown-item" href="klm.html">Kollam</a>
+                  <a class="dropdown-item" href="pta.html">Pathanamthitta</a>
+                  <a class="dropdown-item" href="alp.html">Alappuzha</a>
+                  <a class="dropdown-item" href="ktm.html">Kottayam</a>
+                  <a class="dropdown-item" href="idk.html">idukki</a>
+                  <a class="dropdown-item" href="ekm.html">Ernakulam</a>
+                  <a class="dropdown-item" href="tsr.html">Thrissur</a>
+                  <a class="dropdown-item" href="plkd.html">Palakkad</a>
+                  <a class="dropdown-item" href="mlp.html">Malappuram</a>
+                  <a class="dropdown-item" href="kzd.html">Kozhikode</a>
+                  <a class="dropdown-item" href="wnd.html">Wayanad</a>
+                  <a class="dropdown-item" href="knr.html">Kannur</a>
+                  <a class="dropdown-item" href="ksgd.html">Kasargod</a>                
+                </div>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+          </div>
+            
+      </div>
+        </div>
+      </nav>
+    <div class="wrapper ">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="">
+            <img src="https://mattersindia.com/wp-content/uploads/2020/08/Gods-Own-Country.png" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <form action="home.html" onsubmit="return validate(),pswd()">
+            <input type="text" id="inputEmail4" class="fadeIn second" name="login" placeholder="Email " required onchange="return validate()"> 
+            <label for="" id="error" style="font-size: small;"></label>
+            <input type="password" class="form-control" id="password" placeholder="Password" required onchange="return pswd()">
+        <!-- <meter max="4" id="password-strength-meter"></meter> -->
+        <label id="password-strength-text" style="font-size: small;font-weight: bold;"></label>
+        <label id="text" style="color: red; font-size: small;"><br></br></label>
+            <input type="submit" class="fadeIn fourth" value="Log In">
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <p>New User? <a class="underlineHover" href="signup.html">Sign Up</a></p>
+          </div>
+      
+        </div>
+      </div>
+      <footer class=" container-fluid page-footer font-small blue   " style="">
+
+
+        <div class="container-fluid footer-copyright text-center py-3 col-md-4" style="font-size: small;">© 2020 Copyright:
+          <a href="home.html"> keralatourism.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <script src="form.js"></script>
+      <script src="pswd.js"></script>
+
+</body>
+</html>
