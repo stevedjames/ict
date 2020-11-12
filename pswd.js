@@ -34,6 +34,9 @@ function pswd(){
         // text.style.color="green";
         // meter.value=3;
         return true;
+    }else if(password.value==""){
+        tex.innerHTML="";
+        return false;
     }
     // else if((password.value.length<=5)&&(password.value.length>0)){
     //     text.innerHTML = "Strength: " + strength[1]; 
