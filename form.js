@@ -10,6 +10,10 @@ function validate(){
         error.innerHTML="Valid";
         error.style.color="green";
         return true;
+    }else if(email.value==""){
+        error.innerHTML="Cannot be empty!!!";
+        error.style.color="red";
+        return false;
     }
     else{
         error.innerHTML="Email format should be 'abc@gmail.com'";
