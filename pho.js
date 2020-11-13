@@ -7,6 +7,10 @@ function pho() {
         ph.innerHTML = "Valid";
         ph.style.color = "green";
         return true;
+    }else if(phone.value==""){
+        ph.innerHTML = "Cannot be empty!!!";
+        ph.style.color = "red";
+        return false;
     }
     else {
         ph.innerHTML = "Accept only'XXXXXXXXXX, XXX-XXX-XXXX, XXX XXX XXXX'";
