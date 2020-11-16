@@ -71,8 +71,8 @@
           </div>
       
           <!-- Login Form -->
-          <form action="home.html" >
-            <input type="text" id="inputEmail4" class="fadeIn second" name="login" placeholder="Email " required > 
+          <form action="home.html" onsubmit="return validate()" >
+            <input type="text" id="inputEmail4" class="fadeIn second" name="login" placeholder="Email " required onchange="return validate()"> 
             <label for="" id="error" style="font-size: small;"></label>
             <input type="password" class="form-control" id="password" placeholder="Password" required >
         <!-- <meter max="4" id="password-strength-meter"></meter> -->
